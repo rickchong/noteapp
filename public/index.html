@@ -23,6 +23,23 @@
 </head>
 
 <body>
+<platinum-sw-register
+   auto-register
+   skip-waiting
+   clients-claim
+   reload-on-install
+   href="sw-import.js">
+<platinum-sw-cache
+   default-cache-strategy="networkFirst">
+</platinum-sw-cache>
+</platinum-sw-register>
+  <firebase-app
+      name="notes"
+      api-key="AIzaSyAQPN70zzkvyG31BSxd1L0m85dZkL7CRkU"
+      auth-domain="noteapp-d70e5.firebaseapp.com"
+      database-url="https://noteapp-d70e5.firebaseio.com">
+  </firebase-app>
+<note-app></note-app>
 </body>
 
 </html>
